@@ -1,0 +1,13 @@
+data_paths:
+  raw_sales: "sales_data_poland_full_history_only.csv"
+  flagged_sales: "m5_promo_flagged_by_country.csv"
+  clustered_promos: "promo_clustered.csv"
+
+parameters:
+  promo_flagging:
+    min_weeks: 30
+    change_penalty: 10
+    uplift_threshold: 1.4
+  clustering:
+    sample_size: 25000
+    features: ["Category", "Country", "Month", "WeekOfYear", "Sales_volume"]

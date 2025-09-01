@@ -1,0 +1,23 @@
+# Exclude all CSV files
+*.csv
+
+# But include the specific CSV file we want to keep
+!sales_data_original.csv
+
+# Other common exclusions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.vscode/
+.idea/
+*.log
+.env
+.jupyter/
+.ipynb_checkpoints/
+
+# Model files (if you want to exclude them)
+*.pkl
+*.joblib
+*.h5
